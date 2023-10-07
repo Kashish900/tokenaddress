@@ -71,7 +71,7 @@ export const MyTokenData = [
 export const MyPairData = [
 
     {
-        created : 'Etherium',
+        created : 'Selenium',
         symbol : 'ETH',
         docid : '@12334',
         pairAddress : '#333',
