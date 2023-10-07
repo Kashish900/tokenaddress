@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root{
+  --themecolor:#f30050;
+}
+
+.homemain{
+  height: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url("images/backgroundimg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.mainrow{
+  min-height: 90vh;
+  border-top-right-radius: 33px;
+}
+.footer{
+  height: 10vh;
+  background-color: var(--themecolor);
+}
+.searchbar{
+  display: flex;
+  justify-content: space-between;
+}
+.iconcolor{
+  color: var(--themecolor);
+}
+.sidebarlink:hover{
+  background-color: var(--themecolor);
+}
+#searchbox::placeholder {
+  color: white;
+}
+
+.connectbtn{
+  background:linear-gradient(rgb(117, 16, 63),rgb(94 17 94));
+}
+.bgbox{
+  background-color: #390554;
+  font-size: 12px;
+  height: 154px;
+  box-sizing: border-box;
+}
+.cardbutton{
+  background-color:#75103f ;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  left: 180px;
+  top: 92px;
+}
+
+.modalcolour{
+  background-color: #57515a !important;
+  color: white !important;
+}
+.maincontentcontainer{
+  overflow-y: scroll;
+  height: 500px;
+}
+
+@media(max-width:400px){
+  #sidebarblock{
+    display: none;
+  }
 }
